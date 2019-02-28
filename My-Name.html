@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Name</title>
+    <script lang="javascript">
+        function add()
+        {
+            // var fNameC = document.getElementById("Fname");
+            // var lNameC = document.getElementById("Lname");
+            // var fNameV = fNameC.value;
+            // var lNameV = lNameC.value;
+            // var flNameC = document.getElementById("FLname");
+            // flNameC.value = fNameV + " " + lNameV;
+
+            var fNameC = document.getElementById("Fname").value;
+            var lNameC = document.getElementById("Lname").value;
+            //document.getElementById("FLname").value = fNameC + " " + lNameC;
+            document.getElementById("FLname").innerText = fNameC + " " + lNameC;
+        }
+    </script>
+</head>
+<body>
+    <input id="Fname" type="text">
+    <input id="Lname" type="text">
+    <button onclick="add();">GO</button>
+    <label id="FLname"></label>
+    <!-- <input id="FLname" type="text"> -->
+</body>
+</html>

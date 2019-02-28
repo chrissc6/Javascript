@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Names</title>
+    <script>
+        var names = ["Albert", "Bob", "Charlie"];
+
+        function displayNs()
+        {
+            var nlC = document.getElementById("nl");
+            nlC.innerHTML = "";
+
+            for(var n of names)
+            {
+                var li = "<li>" + n + "</li>";
+                nlC.innerHTML += li;
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="displayNs();">Display Names</button>
+    <h3>A list of names:</h3>
+    <ul id="nl"></ul>
+</body>
+</html>

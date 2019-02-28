@@ -10,8 +10,12 @@
 
             var op1V = Number(op1C.value);
             var op2V = Number(op2C.value);
-            
-            console.log("The answer is: ",op1V+op2V);
+
+            var answerC = document.getElementById("answer");
+
+            answerC.value = (op1V - op2V);
+
+            //console.log("The answer is: ",op1V+op2V);
         }
         function setDefault()
         {
@@ -23,6 +27,7 @@
 <body onload="setDefault();">
     <input id="op1" type="number">
     <input id="op2" type="number">
-    <button onclick="add();">Add</button>
+    <button onclick="add();">Sub</button>
+    <input id="answer" type="number">
 </body>
 </html>
