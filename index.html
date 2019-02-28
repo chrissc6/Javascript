@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Index</title>
+    <script lang="javascript">
+        function add()
+        {
+            var op1C = document.getElementById("op1");
+            var op2C = document.getElementById("op2");
+
+            var op1V = Number(op1C.value);
+            var op2V = Number(op2C.value);
+            
+            console.log("The answer is: ",op1V+op2V);
+        }
+        function setDefault()
+        {
+            var ctrl = document.getElementById("abc");
+            //ctrl.value = "ABC";
+        }
+    </script>
+</head>
+<body onload="setDefault();">
+    <input id="op1" type="number">
+    <input id="op2" type="number">
+    <button onclick="add();">Add</button>
+</body>
+</html>
